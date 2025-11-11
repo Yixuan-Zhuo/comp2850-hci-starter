@@ -10,6 +10,33 @@ import io.pebbletemplates.pebble.PebbleEngine
 import java.io.StringWriter
 
 /**
+ * NOTE FOR NON-INTELLIJ IDEs (VSCode, Eclipse, etc.):
+ * IntelliJ IDEA automatically adds imports as you type. If using a different IDE,
+ * you may need to manually add imports. The commented imports below show what you'll need
+ * for future weeks. Uncomment them as needed when following the lab instructions.
+ *
+ * When using IntelliJ: You can ignore the commented imports below - your IDE will handle them.
+ */
+
+// Week 7+ imports (inline edit, toggle completion):
+// import model.Task               // When Task becomes separate model class
+// import model.ValidationResult   // For validation errors
+// import renderTemplate            // Extension function from Main.kt
+// import isHtmxRequest             // Extension function from Main.kt
+
+// Week 8+ imports (pagination, search, URL encoding):
+// import io.ktor.http.encodeURLParameter  // For query parameter encoding
+// import utils.Page                       // Pagination helper class
+
+// Week 9+ imports (metrics logging, instrumentation):
+// import utils.jsMode              // Detect JS mode (htmx/nojs)
+// import utils.logValidationError  // Log validation failures
+// import utils.timed               // Measure request timing
+
+// Note: Solution repo uses storage.TaskStore instead of data.TaskRepository
+// You may refactor to this in Week 10 for production readiness
+
+/**
  * Week 6 Lab 1: Simple task routes with HTMX progressive enhancement.
  *
  * **Teaching approach**: Start simple, evolve incrementally
